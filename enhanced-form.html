@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML5 assignment showcasing lists, tables, media embedding, and advanced form creation with validation.">
+  <title>Enhanced HTML5 Page with Forms</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>HTML5 Advanced Elements and Forms</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with built-in validation.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section: Lists -->
+    <section>
+      <h2>Learning Resources</h2>
+      <p>Here are some useful HTML5 resources:</p>
+      
+      <h3>Ordered List (Steps to Learn)</h3>
+      <ol>
+        <li>Understand semantic elements</li>
+        <li>Practice accessibility techniques</li>
+        <li>Master forms and validation</li>
+      </ol>
+      
+      <h3>Unordered List (Recommended Tools)</h3>
+      <ul>
+        <li>VS Code or Sublime Text</li>
+        <li>W3C Validator</li>
+        <li>Screen Reader (NVDA, JAWS)</li>
+      </ul>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table border="1" cellspacing="0" cellpadding="8">
+        <caption>Weekly HTML5 Training Plan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Focus Area</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Introduction to HTML5</td>
+            <td>Semantic Elements</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Accessibility</td>
+            <td>Landmarks & ARIA</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Forms</td>
+            <td>Inputs & Validation</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>Media Demonstration</h2>
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Sample placeholder graphic" width="400" height="200">
+        <figcaption>Example image embedded using HTML5.</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Audio sample for HTML5 media embedding.</figcaption>
+      </figure>
+
+      <figure>
+        <video controls width="400">
+          <source src="sample-video.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+        <figcaption>Video sample embedded with HTML5.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section: Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <p>Please fill in the form below to register:</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email"><br><br>
+
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="Minimum 6 characters"><br><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob" required><br><br>
+
+          <label for="gender">Gender:</label><br>
+          <select id="gender" name="gender" required>
+            <option value="">Select an option</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          
+          <p>Choose your subscription plan:</p>
+          <label><input type="radio" name="plan" value="basic" required> Basic</label><br>
+          <label><input type="radio" name="plan" value="premium"> Premium</label><br>
+          <label><input type="radio" name="plan" value="pro"> Pro</label><br><br>
+
+          <p>Interests:</p>
+          <label><input type="checkbox" name="interest" value="html"> HTML</label><br>
+          <label><input type="checkbox" name="interest" value="css"> CSS</label><br>
+          <label><input type="checkbox" name="interest" value="javascript"> JavaScript</label><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Details</legend>
+
+          <label for="website">Website:</label><br>
+          <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+          <label for="bio">Short Bio:</label><br>
+          <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us something about yourself..."></textarea><br><br>
+
+          <label for="readonly-field">Read-only Example:</label><br>
+          <input type="text" id="readonly-field" value="This cannot be edited" readonly><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Web Technologies Classroom - Enhanced Form Assignment</p>
+  </footer>
+</body>
+</html>
